@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Daily Journal</title>
+</head>
+
+<body>
+    <%- include("header") -%>
+        <% for (var i=0; i<headings.length; i++){ %>
+            <div class="pages">
+                <h2 class="jheading">
+                    <%= headings[i] %>
+                </h2>
+                <h3 class="jrnl">
+                    <%= journals[i] %>
+                </h3>
+            </div>
+            <% } %>
+                <!-- <table>
+            <% for (var i=0; i<headings.length; i++){ %>
+                <tr>
+                    <td>
+                        <span class="jheading">
+                            <%= headings[i] %>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="jrnl">
+                            <%= journals[i] %>
+                        </span>
+                    </td>
+                </tr>
+                <% } %>
+
+        </table> -->
+</body>
+<!-- <%- include("footer") -%> -->
+
+</html>

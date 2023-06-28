@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+}
+
+ul,
+li {
+  display: inline-block;
+}
+
+ul {
+  margin-left: 30vw;
+}
+
+header {
+  margin-top: 5vh;
+}
+
+#heading {
+  font-size: 45px;
+  margin-left: 5vw;
+}
+
+.header_anchor {
+  text-decoration: none;
+  color: black;
+  margin: 0 20px;
+  letter-spacing: 5px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+table {
+  table-layout: fixed;
+}
+
+footer {
+  text-align: center;
+  background-color: teal;
+  padding: 5vh;
+  margin-top: 20%;
+}
+
+.ctable {
+  border: 2px solid rgb(32, 32, 32);
+  margin: 10vh auto 0 auto;
+  padding: 5vw 10vw;
+}
+
+.cheading {
+  width: 300px;
+  height: 50px;
+  font-size: 25px;
+}
+
+.cjheading {
+  margin-top: 0;
+  font-size: 32px;
+}
+
+.cjournal {
+  width: 300px;
+  height: 150px;
+  font-size: 25px;
+}
+
+.ctd {
+  margin: 50px;
+}
+
+#compose_anchor {
+  text-decoration: none;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 32px;
+  color: black;
+}
+
+/* home page span's */
+
+.pages {
+  margin: 100px auto 100px auto;
+  width: 1000px;
+}
+
+.jheading {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  letter-spacing: 2px;
+  width: 1000px;
+}
+
+.jrnl {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  width: 500px;
+}
+
+/* Compose Button */
+
+#compose_button {
+  width: 200px;
+  height: 50px;
+}
+
+/* Compose Form */
+
+#compose_form > input,
+#compose_form > textarea {
+  margin: 25px auto 25px auto;
+  width: 300px;
+}
+
+#compose_form > input {
+  height: 50px;
+  font-size: 25px;
+}
+
+.compose {
+  /* background-color: red; */
+  margin: 50px auto;
+  max-width: 500px;
+  text-align: center;
+  border: 0.5px solid black;
+  padding: 0 200px 100px 200px;
+}
+
+#compose_form > button {
+  width: 100px;
+  height: 50px;
+  font-weight: bolder;
+}
+
+.compose > h2 {
+  font-size: 30px;
+}
