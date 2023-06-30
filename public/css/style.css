@@ -34,9 +34,13 @@ table {
 
 footer {
   text-align: center;
-  background-color: teal;
-  padding: 5vh;
-  margin-top: 20%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: aquamarine;
 }
 
 .ctable {
@@ -90,7 +94,9 @@ footer {
 .jrnl {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
-  width: 500px;
+  width: 1000px;
+  word-wrap: break-word;
+  font-weight: normal;
 }
 
 /* Compose Button */
@@ -130,4 +136,16 @@ footer {
 
 .compose > h2 {
   font-size: 30px;
+}
+
+#compose_button {
+  width: 150px;
+  height: 50px;
+}
+
+.csubmit {
+  background-color: red;
+  margin: 100px auto 100px auto;
+  width: 150px;
+  height: 50px;
 }
