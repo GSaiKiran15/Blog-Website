@@ -34,7 +34,7 @@ table {
 
 footer {
   text-align: center;
-  position: fixed;
+  position: relative;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -148,4 +148,12 @@ footer {
   margin: 100px auto 100px auto;
   width: 150px;
   height: 50px;
+}
+
+#read_button {
+  border: none;
+  color: blue;
+  background-color: transparent;
+  text-decoration: underline;
+  cursor: pointer;
 }

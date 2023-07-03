@@ -5,27 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="#">
     <title>Daily Journal</title>
 </head>
 
 <body>
     <%- include("header") -%>
         <% for (var i=0; i<headings.length; i++){ %>
-            <% console.log(headings[i],headings.length) %>
-                <div class="pages">
-                    <h2 class="jheading">
-                        <%= headings[i] %>
-                    </h2>
-                    <h3 class="jrnl">
+            <div class="pages">
+                <h2 class="jheading" name="<%= headings[i] %>">
+                    <%= headings[i] %>
+                </h2>
+                <h3 class="jrnl">
+                    <% if (journals[i].length<100) { %>
                         <%= journals[i] %>
-                    </h3>
-                    <% } %>
-                </div>
-                <div class="csubmit">
-                    <a href="/compose"> <button id="compose_button">Compose</button></a>
-                </div>
+                            <% } else { %>
+                                <% let s=journals[i].slice(0,100) %>
+                                    <%= s %> <a href="/<%= headings[i] %>"> <button id="read_button">Read
+                                                More...</button></a>
+                                        <% } %>
 
-                <%- include("footer") -%>
+                </h3>
+                <% } %>
+            </div>
+            <div class="csubmit">
+                <a href="/compose"> <button id="compose_button">Compose</button></a>
+            </div>
+
+            <%- include("footer") -%>
 
 </body>
 
